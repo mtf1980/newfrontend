@@ -1,0 +1,42 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+// $body-bg: #888987;
+$body-bg: #003b4c;
+// $body-color: #999999;
+$font-family-sans-serif: 'Poppins', sans-serif;
+// $primary: #000000;
+@import '/node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import '@uppy/core/dist/style.css';
+@import '@uppy/dashboard/dist/style.css';
+// Then add additional custom code here
+
+// used for the cards in the home page -start
+.box-shadow {
+  -webkit-box-shadow: 0 1px 1px rgba(72, 78, 85, 0.6);
+  box-shadow: 0 1px 1px rgba(72, 78, 85, 0.6);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.box-shadow:hover {
+  -webkit-box-shadow: 0 20px 40px rgba(72, 78, 85, 0.6);
+  box-shadow: 0 20px 40px rgba(72, 78, 85, 0.6);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+// used for the cards in the home page- end
+//badges used in the header -start
+.badge-header {
+  border-radius: 50%;
+
+  top: -5px;
+}
