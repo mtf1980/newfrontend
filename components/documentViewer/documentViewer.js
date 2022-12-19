@@ -198,7 +198,7 @@ export default function DocumentViewer() {
               <div className='row g-2 align-items-center'>
                 <div className='col-6'>
                   <label for='date' className='col-form-label'>
-                    Date:
+                    Event date:
                   </label>
                   <select
                     class='form-select bg-light'
@@ -274,6 +274,19 @@ export default function DocumentViewer() {
                     <option value='3'>GP</option>
                   </select>
                 </div>
+              </div>
+
+              <div className='col-12'>
+                <label for='eventcode' className='col-form-label'>
+                  Event Code:
+                </label>
+                <select
+                  class='form-select bg-light'
+                  aria-label='Default select example'
+                >
+                  <option selected>Did not attend | 95%</option>
+                  <option value='1'>Seen in A&E</option>
+                </select>
               </div>
               <hr className='mt-3' />
               <div className='text-center'>
